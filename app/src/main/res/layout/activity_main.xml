@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/uberlogo"
+        android:src="@drawable/uberlogo"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <Switch
+        android:id="@+id/driverOrRider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/uberlogo"
+        android:layout_marginTop="100dp"
+        android:background="#264671" />
+
+    <TextView
+        android:id="@+id/RiderTV_ID"
+        android:layout_below="@id/uberlogo"
+        android:layout_alignLeft="@id/driverOrRider"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="70dp"
+        android:textStyle="bold"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:text="Rider" />
+
+    <TextView
+        android:id="@+id/driverTV_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/uberlogo"
+        android:layout_centerHorizontal="true"
+        android:layout_alignRight="@id/driverOrRider"
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="100dp"
+        android:textStyle="bold"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:text="Driver" />
+
+    <Button
+        android:id="@+id/getStartedBtn_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/driverOrRider"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Get Start"
+        android:textAllCaps="false"
+        android:background="#1D2341"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="@color/browser_actions_bg_grey"/>
+
+</RelativeLayout>
